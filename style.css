@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  
+    background: linear-gradient(to right top, rgb(147, 49, 176), #43a5c8);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav_bar{
+    border: 0.5px solid rgba(29, 29, 30, 0.2); 
+    text-align: center;
+}
+.nav_bar ul {
+    display: inline-flex;
+    color: rgb(25, 25, 27);
+    list-style : none;
+}
+.nav_bar ul li {
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.active , .nav_bar ul li:hover {
+    background-color: rgba(19, 19,19, 0.3);
+}
+
+.sub-menu-1 {
+    display: none;
+}
+.nav_bar ul li:hover .sub-menu-1  {
+    display: block;
+    position: absolute; 
+    background-color: rgba(19, 19,19, 0.3);
+    /* margin-left: -10px; */
+    margin-top: 10px;
+    padding: 10px;
+}
+.nav_bar ul li:hover .sub-menu-1  ul{
+    display: block;
+    left: 0;
+}
+.nav_bar ul li:hover .sub-menu-1  ul li {
+    border-bottom: 1px dotted rgb(30, 30, 30);
+}
+.nav_bar ul li:hover .sub-menu-1  ul li a:hover {
+    color: #ebbbbb;
+}
+.gt{
+    float: right;
+    color: #fff;
+}
+.sub-menu-2 {
+    display: none;
+}
+.nav_bar ul li:hover .sub-menu-1 ul li:hover .sub-menu-2{
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 120px;
+}
+.nav_bar ul li:hover .sub-menu-1  ul li:hover .sub-menu-2 ul{
+    margin-left: 130px;
+    background-color: rgba(19, 19,19, 0.3);
+    padding-bottom: 4px;
+
+}
+.quick-links ul li{
+    width: 160px;
+    padding: 10px;
+};
